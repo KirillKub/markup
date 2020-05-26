@@ -1,0 +1,162 @@
+@font-face {
+  font-family: "Gilroy";
+  src: url("assets/fonts/Radomir\ Tinkov\ -\ Gilroy-ExtraBold.otf") format("otf"),
+  url("assets/fonts/Radomir\ Tinkov\ -\ Gilroy-Light.otf") format("otf"),
+}
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    height: 80px;
+    max-width: 1420px;
+    margin: auto;
+    position: relative;
+    flex-wrap: wrap;
+}
+
+.header__section1 {
+  display: flex;
+  align-items: center;
+  width: 320px;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+.header__section2 {
+  display: flex;
+  align-items: center;
+  width: 460px;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+.header__section2-desc {
+  font-size: 12px;
+  line-height: 12px;
+  letter-spacing: -0.5px;
+  color: #FFFFFF;
+  opacity: 0.5;
+}
+
+.header__section2-mail {
+  margin-top: 6px;
+  font-size: 14px;
+  line-height: 12px;  
+  letter-spacing: -0.5px;
+  color: #FEE040;
+}
+
+.header__section2-mail img{
+  margin-right: 5px;
+}
+
+.header__section2-questions {
+  font-size: 12px;
+  line-height: 12px;
+  text-align: right;
+  letter-spacing: -0.5px;
+  color: #FFFFFF;
+  opacity: 0.5;
+}
+
+.header__section2-phone {
+  font-family: Proxima Nova;
+  font-size: 20px;
+  line-height: 24px;
+  text-align: right;
+  color: #FFFFFF;
+}
+
+.main__section1 {
+  max-width: 1920px;
+  height: 768px;
+  background: url('./assets/bg.jpg');
+}
+
+.main__section1-box {
+  margin-top: 128px;
+}
+
+.desc__first-title {
+  font-family: Gilroy;
+  font-size: 42px;
+  line-height: 51px;
+  letter-spacing: -0.5px;
+  color: #FFFFFF;
+  max-width: 580px;
+}
+
+.desc__first-text {
+  margin-top: 38px;
+  font-size: 20px;
+  line-height: 34px;
+  color: #FFFFFF;
+  opacity: 0.7;
+  max-width: 363px;
+}
+
+.desc__second__btn {
+  width: 340px;
+  height: 70px;
+  background: #FEE040;
+  border-radius: 2px;
+  border: 0;
+  outline: 0;
+  font-family: Gilroy;
+  font-size: 12px;
+  line-height: 15px;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+}
+
+.desc__second__btn:hover {
+  cursor: pointer;
+}
+
+.desc__second__text {
+  font-family: Proxima Nova;
+  font-size: 15px;
+  line-height: 28px;
+  color: #FFFFFF;
+  margin-top: 40px;
+  width: 340px;
+}
+
+.main__section1-desc {
+  max-width: 1180px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+}
+
+.prop-elem {
+  width: 260px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.main__section1-second-box {
+  display: flex;
+  align-items: flex-end;
+  justify-content: space-between;
+  max-width: 1420px;
+  margin: 0 auto;
+  flex-wrap: wrap;
+}
+
+.main__section1-second-box__prop {
+  display: flex;
+  justify-content: space-between;
+  width: 1020px;
+  flex-wrap: wrap;
+}
+
+.prop-elem__text {
+  width: 180px;
+  font-family: Proxima Nova;
+  font-size: 20px;
+  line-height: 28px;
+  letter-spacing: -0.5px;
+  color: #FFFFFF;
+}
