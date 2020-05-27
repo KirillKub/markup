@@ -13,7 +13,7 @@
       <div class="header">
         <div class="header__section1">
           <div><img src="./assets/burger.png" alt="menu" width="40" height="22"> </div>
-          <div><img src="./assets//logo.svg" alt="logo"> </div>
+          <div class="header__section1-logo"><img src="./assets//logo.svg" alt="logo"> </div>
         </div>
         <div class="header__section2">
           <div>
@@ -76,7 +76,7 @@
             6 лет и 2 штатных сотрудника для камеральных работ
           </div>
         </div>
-        <img class="main__section2-img" src="./assets/tv.png" alt="tv">
+        <div class="main__section2-img"><img src="./assets/tv.png" alt="tv"></div>
         <div>
           <div class="main__section2__options">Вы и Ваши архитекторы получаете:</div>
           <div class="main__section2__options-box">
@@ -103,41 +103,66 @@
         </div>
         <div class="main__section3__scroll-item">
           <div class="scroll-item__img"><img src="./assets/photo2.png" alt="photo"></div>
-          <div class="scroll-item__title">Общее обследование</div>
-          <div class="scroll-item__text">Экспертиза отдельных конструкций, обмерные работы, определение прочности, расчет несущей способности
-            и т.д.
+          <div class="scroll-item__title">Тепловизионная съемка</div>
+          <div class="scroll-item__text">Исследование системы отопления, вентиляции
+            и кондиционирования, а также оценка энергоэффективности здания
             </div>
           <div class="scroll-item__more">Подробнее <img src="./assets/arrow (Stroke).svg" alt="arrow"></div>
         </div>
         <div class="main__section3__scroll-item">
           <div class="scroll-item__img"><img src="./assets/photo3.png" alt="photo"></div>
-          <div class="scroll-item__title">Общее обследование</div>
-          <div class="scroll-item__text">Экспертиза отдельных конструкций, обмерные работы, определение прочности, расчет несущей способности
-            и т.д.
+          <div class="scroll-item__title">Телеинспекция инженерных сетей</div>
+          <div class="scroll-item__text">Цветная телевизионная съемка внутренней поверхности любых протяженных объектов
+            до 250 метров
             </div>
           <div class="scroll-item__more">Подробнее <img src="./assets/arrow (Stroke).svg" alt="arrow"></div>
         </div>
         <div class="main__section3__scroll-item">
           <div class="scroll-item__img"><img src="./assets/photo4.png" alt="photo"></div>
-          <div class="scroll-item__title">Общее обследование</div>
-          <div class="scroll-item__text">Экспертиза отдельных конструкций, обмерные работы, определение прочности, расчет несущей способности
-            и т.д.
+          <div class="scroll-item__title">Тахеометрическая съемка</div>
+          <div class="scroll-item__text">Построение чертежей при помощи лазера, который с точностью до микрона определяет расположение объектов в пространстве
             </div>
           <div class="scroll-item__more">Подробнее <img src="./assets/arrow (Stroke).svg" alt="arrow"></div>
         </div>
         <div class="main__section3__scroll-item">
           <div class="scroll-item__img"><img src="./assets/photo5.png" alt="photo"></div>
-          <div class="scroll-item__title">Общее обследование</div>
-          <div class="scroll-item__text">Экспертиза отдельных конструкций, обмерные работы, определение прочности, расчет несущей способности
-            и т.д.
+          <div class="scroll-item__title">Диагностика высотных сооружений</div>
+          <div class="scroll-item__text">Оценка состояния антенн и дымовых труб
+            при помощи альпинистов и квадрокоптеров
+            с 30-кратным зумом
             </div>
           <div class="scroll-item__more">Подробнее <img src="./assets/arrow (Stroke).svg" alt="arrow"></div>
         </div>
       </div>
     </div>
+    <div class="main__section4">
+      <div class="main__section4-title">Мы работаем в комплексе</div>
+      <div class="main__section4-text">
+        чтобы Вы не тратили время на поиск и организацию
+        множества подрядчиков
+      </div>
+    </div>
+    <div class="main__section5">
+      <div class="main__section5-img"><img src="./assets/photo slider.png" alt=""></div>
+      <div class="main__section5-desc">
+        <div class="main__section5-desc__wrap">
+          <div class="main__section5-title">
+            <div class="main__section5-title__box">
+              <span class="main__section5-title__step">шаг №1.</span>
+              <span class="main__section5-title__text">Подготовительные работы</span>
+            </div>
+          </div>
+          <div class="main__section5-text">Мы осматриваем здание, делаем замеры и проверяем наличие визуально заметных дефектов: трещин, коррозии, повреждения фундамента и т.д. </div>
+          <div class="main__section5-comment">
+            <img src="./assets/706181.png" alt="" class="main__section5-comment__img">
+            <div class="main__section5-comment__text">“Задача этого этапа получить максимально полное представление о конструкции здания, условиях его эксплуатации и возможных слабых местах“</div>
+          </div>
+          <div class="main__section5-author">АЛЕКСЕЙ, обследователь и главный инженер проектов</div>
+        </div>
+      </div>
+    </div>
   </main>
   <script>
-    console.log(5)
     var $hor = $("#horizontal");
     $("body").css('padding-bottom', $hor[0].scrollWidth - $hor.outerWidth());
     $(window).on('scroll', function () {
