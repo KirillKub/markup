@@ -786,6 +786,7 @@ img[alt=menu] {
 
   .main__section3__scroll-item {
     width: 140px;
+    margin-right: 20px;
   }
 
   .scroll-item__img {
