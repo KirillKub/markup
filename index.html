@@ -5,6 +5,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="style.css">
   <title>Document</title>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
 </head>
 <body>
   <main>
@@ -86,6 +87,67 @@
         </div>
       </div>
     </div>
+    <div class="main__section3">
+      <div class="main__section3-title">
+        <div class="main__section3-title__service">УСЛУГИ</div>
+        <div class="main__section3-title__text">Выполняем как комплексное обследование, так и отдельные виды работ</div>
+      </div>
+      <div class="main__section3__scroll" id="horizontal">
+        <div class="main__section3__scroll-item scroll-item__first">
+          <div class="scroll-item__img"><img src="./assets/photo1.png" alt="photo"></div>
+          <div class="scroll-item__title">Общее обследование</div>
+          <div class="scroll-item__text">Экспертиза отдельных конструкций, обмерные работы, определение прочности, расчет несущей способности
+            и т.д.
+            </div>
+          <div class="scroll-item__more">Подробнее <img src="./assets/arrow (Stroke).svg" alt="arrow"></div>
+        </div>
+        <div class="main__section3__scroll-item">
+          <div class="scroll-item__img"><img src="./assets/photo2.png" alt="photo"></div>
+          <div class="scroll-item__title">Общее обследование</div>
+          <div class="scroll-item__text">Экспертиза отдельных конструкций, обмерные работы, определение прочности, расчет несущей способности
+            и т.д.
+            </div>
+          <div class="scroll-item__more">Подробнее <img src="./assets/arrow (Stroke).svg" alt="arrow"></div>
+        </div>
+        <div class="main__section3__scroll-item">
+          <div class="scroll-item__img"><img src="./assets/photo3.png" alt="photo"></div>
+          <div class="scroll-item__title">Общее обследование</div>
+          <div class="scroll-item__text">Экспертиза отдельных конструкций, обмерные работы, определение прочности, расчет несущей способности
+            и т.д.
+            </div>
+          <div class="scroll-item__more">Подробнее <img src="./assets/arrow (Stroke).svg" alt="arrow"></div>
+        </div>
+        <div class="main__section3__scroll-item">
+          <div class="scroll-item__img"><img src="./assets/photo4.png" alt="photo"></div>
+          <div class="scroll-item__title">Общее обследование</div>
+          <div class="scroll-item__text">Экспертиза отдельных конструкций, обмерные работы, определение прочности, расчет несущей способности
+            и т.д.
+            </div>
+          <div class="scroll-item__more">Подробнее <img src="./assets/arrow (Stroke).svg" alt="arrow"></div>
+        </div>
+        <div class="main__section3__scroll-item">
+          <div class="scroll-item__img"><img src="./assets/photo5.png" alt="photo"></div>
+          <div class="scroll-item__title">Общее обследование</div>
+          <div class="scroll-item__text">Экспертиза отдельных конструкций, обмерные работы, определение прочности, расчет несущей способности
+            и т.д.
+            </div>
+          <div class="scroll-item__more">Подробнее <img src="./assets/arrow (Stroke).svg" alt="arrow"></div>
+        </div>
+      </div>
+    </div>
   </main>
+  <script>
+    console.log(5)
+    var $hor = $("#horizontal");
+    $("body").css('padding-bottom', $hor[0].scrollWidth - $hor.outerWidth());
+    $(window).on('scroll', function () {
+      var top = $(document).scrollTop();
+      var lim = $hor.position().top - $hor[0].scrollLeft - ($(window).height() - $hor.outerHeight()) / 2;
+      var width = $hor[0].scrollWidth - $hor.outerWidth();
+      var delta = Math.min(Math.max(top - lim, 0), width);
+      $hor[0].scrollLeft = delta;
+      $("body").css({'padding-top': delta, 'padding-bottom': width - delta});
+      });
+  </script>
 </body>
 </html>
