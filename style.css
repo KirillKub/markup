@@ -137,7 +137,7 @@ body {
 }
 
 .prop-elem {
-  max-width: 260px;
+  width: 260px;
   display: flex;
   justify-content: space-between;
 }
@@ -650,6 +650,10 @@ img[alt=menu] {
   .main__section5-title__text {
     text-align: center;
   } 
+
+  .prop-elem {
+    width: 140px;
+  }
 
   .prop-elem__text {
     font-size: 16px;
